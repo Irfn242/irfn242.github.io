@@ -1,10 +1,154 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>I'm Irfan</title>
-  </head>
-  <body>
-    <h1>irfan</h1>
-  </body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>HOME</title>
+    
+        <style>
+            body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+
+
+}
+
+
+            #myHeader {
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 50px;
+                color: navy;
+            }
+            img {
+                border-radius: 50%;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        
+            
+        </style>
+       
+    </head>
+    <body style="background-color: whitesmoke;">
+
+        <!--NAV -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="about.html">About</a>
+              <a href="blog.html">Blog</a>
+              <a href="#">Services</a>
+              <a href="#">Contact Me</a>
+            </div>
+          </div>
+          
+          
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; MENU</span>
+           
+          <script>
+          function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+          }
+          </script>
+
+
+        <!--CONTENT OF THE PAGE-->
+    <h1 id="myHeader";">I R F A N.C O M</h1>
+    <br>
+    <br>
+    <br>
+
+    <img src="irf.jpg" alt="Me" style="width: 200px; height: 215px;" class="center">
+
+<br>
+
+    <a href="sign up.html">
+        <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: navy;">SIGN UP</h1>
+    </a>
+    <br>
+    <h2 style="text-align: center;">follow me on</h2>
+
+
+    <div style="text-align: center;">
+        <a href="https://www.facebook.com/profile.php?id=100044626882625" title="Facebok">
+            <img src="fb.svg" alt="fb" style="width: 3%; height: 3%;"></a>
+
+            <br>
+
+        <a href="https://www.instagram.com/i.a.m.i.r.f.a.n" title="Instagram">
+            <img src="insta1.jpg" alt="INSTA" width="2%" height="2%">
+        </a>
+
+        <br>
+
+        <a href="https://twitter.com/AlyIrfn1?s=09" title="Twitter">
+            <img src="twitter.png" alt="TWWTR" height="1.5%" width="1.5%">
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <p style="text-align: center; opacity: 50%;">This website is created by myself (Ali Irufaan) for my personal uses. If you got access to this site, never share it with anyone else.</p>
+    <footer style="text-align: center; opacity: 50%;">&copy; ALI IRUFAAN 2020</footer>
+   
+    </body>
 </html>
